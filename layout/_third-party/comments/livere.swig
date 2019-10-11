@@ -1,12 +1,7 @@
-{% if page.comments %}
-{% set liveRefer = page.path %}
-{% if not is_post() %}
-  {% set liveRefer = page.path.replace('index.html', '') %}
-{% endif %}
-
+{%- if page.comments %}
 <script>
   window.livereOptions = {
-    refer: '{{ liveRefer }}'
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
@@ -17,4 +12,4 @@
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
 </script>
-{% endif %}
+{%- endif %}

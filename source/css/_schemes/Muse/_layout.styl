@@ -1,4 +1,4 @@
-.header-inner, .container .main-inner, .footer-inner {
+.header-inner, .main-inner, .footer-inner {
   +mobile() {
     width: auto;
   }
@@ -10,8 +10,11 @@
   }
 }
 
-// embed tag
+.main-inner {
+  padding-bottom: 60px;
+}
+
 embed {
-  show();
-  margin: 0px auto 25px auto;
+  display: block;
+  margin: 0 auto 25px auto;
 }
