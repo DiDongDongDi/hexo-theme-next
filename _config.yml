@@ -1,4 +1,3 @@
-
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
 # See: https://theme-next.org/docs/theme-settings/
@@ -108,50 +107,11 @@ creative_commons:
 # Scheme Settings
 # ---------------------------------------------------------------
 
-<<<<<<< HEAD
-# Disable Baidu transformation on mobile devices.
-disable_baidu_transformation: false
-
-# Set a canonical link tag in your hexo, you could use it for your SEO of blog.
-# See: https://support.google.com/webmasters/answer/139066
-# Remember to set up your URL in Hexo `_config.yml` (e.g. url: http://yourdomain.com)
-canonical: true
-
-# Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: true
-
-# If true, will add site-subtitle to index page.
-# Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-index_with_subtitle: true
-
-# Automatically add external URL with Base64 encrypt & decrypt.
-exturl: false
-
-# Google Webmaster tools verification.
-# See: https://www.google.com/webmasters
-google_site_verification: gthlzZ_qq2NXUY91JvB2C3FK9UMfEvrH_GoU8nswka8
-
-# Bing Webmaster tools verification.
-# See: https://www.bing.com/webmaster
-bing_site_verification: 40EF0D801C91BDF6EB5FE55861B4F8AA
-
-# Yandex Webmaster tools verification.
-# See: https://webmaster.yandex.ru
-yandex_site_verification:
-
-# Baidu Webmaster tools verification.
-# See: https://ziyuan.baidu.com/site
-baidu_site_verification: mBrz0gqBDR
-
-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: true
-=======
 # Schemes
 scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
 
 
 # ---------------------------------------------------------------
@@ -212,11 +172,11 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /images/avatar.gif
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar would be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -254,22 +214,7 @@ links_settings:
 links:
   #Title: http://example.com
 
-<<<<<<< HEAD
-# Sidebar Avatar
-avatar:
-  # In theme directory (source/images): /images/avatar.gif
-  # In site directory (source/uploads): /uploads/avatar.gif
-  # You can also use other linking images.
-  url: /images/avatar.gif
-  # If true, the avatar would be dispalyed in circle.
-  rounded: true
-  # If true, the avatar would be rotated with the cursor.
-  rotated: true
-
-# Table Of Contents in the Sidebar
-=======
 # Table of Contents in the Sidebar
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
 toc:
   enable: true
   # Automatically add list number to toc.
@@ -281,42 +226,10 @@ toc:
   # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` in Front-matter.
   max_depth: 6
 
-<<<<<<< HEAD
-sidebar:
-  # Sidebar Position.
-  position: left
-  #position: right
-
-  # Manual define the sidebar width. If commented, will be default for:
-  # Muse | Mist: 320
-  # Pisces | Gemini: 240
-  #width: 300
-
-  # Sidebar Display (only for Muse | Mist), available values:
-  #  - post    expand on posts automatically. Default.
-  #  - always  expand for all pages automatically.
-  #  - hide    expand only when click on the sidebar toggle icon.
-  #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
-
-  # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
-  offset: 12
-  # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
-
-back2top:
-  enable: true
-  # Back to top in sidebar.
-  sidebar: false
-  # Scroll percent label in b2t button.
-  scrollpercent: true
-
-=======
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:
-  enable: true
+  enable: false
   #service: chatra
   #service: tidio
   icon: comment # Icon name in Font Awesome, set false to disable icon.
@@ -331,12 +244,6 @@ chat:
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 
-<<<<<<< HEAD
-# Automatically saving scroll position on each post / page in cookies.
-save_scroll: true
-
-=======
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
 
@@ -374,8 +281,8 @@ tag_icon: true
 # Wechat Subscriber
 wechat_subscriber:
   enable: false
-  qcode: /uploads/wechat-qcode.jpg
-  description: Subscribe to my blog by scanning my public wechat account.
+  qcode: #/uploads/wechat-qcode.jpg
+  #description: Subscribe to my blog by scanning my public wechat account.
 
 # Reward (Donate)
 reward_settings:
@@ -390,7 +297,18 @@ reward:
   alipay: /images/alipay.png
   #bitcoin: /images/bitcoin.png
 
-
+# Related popular posts
+# Dependencies: https://github.com/tea3/hexo-related-popular-posts
+related_posts:
+  enable: true
+  title: # Custom header, leave empty to use the default one
+  display_in_home: false
+  params:
+    maxCount: 5
+    PPMixingRate: 0.0
+    isDate: true
+    isImage: false
+    isExcerpt: false
 
 # Post edit
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
@@ -410,11 +328,6 @@ cheers: true
 
 # TagCloud settings for tags page.
 tagcloud:
-<<<<<<< HEAD
-  # If true, font size, font color and amount of tags can be customized
-  enable: true
-=======
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
   # All values below are same as default, change them by yourself
   min: 12 # Minimun font size in px
   max: 30 # Maxium font size in px
@@ -449,7 +362,7 @@ text_align:
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: true
+mobile_layout_economy: false
 
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#222"
@@ -481,11 +394,11 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -493,7 +406,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -503,7 +416,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: true
-  permalink: https://github.com/DiDongDongDi
+  permalink: https://github.com/yourname
   title: Follow me on GitHub
 
 
@@ -575,22 +488,22 @@ disable_baidu_transformation: false
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with Base64 encrypt & decrypt.
 exturl: false
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-google_site_verification:
+google_site_verification: gthlzZ_qq2NXUY91JvB2C3FK9UMfEvrH_GoU8nswka8
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
-bing_site_verification:
+bing_site_verification: 40EF0D801C91BDF6EB5FE55861B4F8AA
 
 # Yandex Webmaster tools verification.
 # See: https://webmaster.yandex.ru
@@ -598,10 +511,10 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification:
+baidu_site_verification: mBrz0gqBDR
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -624,42 +537,24 @@ math:
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    enable: false
+    enable: true
     # See: https://mhchem.github.io/MathJax-mhchem/
-    mhchem: false
+    mhchem: true
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
-<<<<<<< HEAD
-    cdn: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
-    #cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
-
-    copy_tex:
-      # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
-      enable: false
-      copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
-      copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
-
-# 一定要先安装插件, 不然可能会出现网页明明有东西却空白的情况
-# Fancybox. There is support for old version 2 and new version 3.
-# Choose only one variant, do not need to install both.
-# To install 2.x: https://github.com/theme-next/theme-next-fancybox
-# To install 3.x: https://github.com/theme-next/theme-next-fancybox3
-fancybox: true
-=======
-    enable: false
+    enable: true
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
-    copy_tex: false
+    copy_tex: true
 
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
 # For moreinformation: https://github.com/MoOx/pjax
-pjax: false
+pjax: true
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
-fancybox: false
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
+fancybox: true
 
 # A JavaScript library for zooming images like Medium.
 # Do not enable both `fancybox` and `mediumzoom`.
@@ -667,13 +562,8 @@ fancybox: false
 mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
-<<<<<<< HEAD
-# Dependencies: https://github.com/theme-next/theme-next-lazyload
-lazyload: true
-=======
 # For more information: https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
+lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -701,24 +591,6 @@ quicklink:
   # See: https://github.com/GoogleChromeLabs/quicklink#custom-ignore-patterns
   ignores:
 
-<<<<<<< HEAD
-# Bookmark Support
-# Dependencies: https://github.com/theme-next/theme-next-bookmark
-bookmark:
-  enable: true
-  # If auto, save the reading position when closing the page or clicking the bookmark-icon.
-  # If manual, only save it by clicking the bookmark-icon.
-  save: auto
-
-# Reading progress bar
-# Dependencies: https://github.com/theme-next/theme-next-reading-progress
-reading_progress:
-  enable: true
-  color: "#37c6c0"
-  height: 2px
-
-=======
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
 
 # ---------------------------------------------------------------
 # Comments Settings
@@ -816,91 +688,10 @@ gitalk:
 
 
 # ---------------------------------------------------------------
-<<<<<<< HEAD
-# Content Sharing Services
-# See: https://theme-next.org/docs/third-party-services/content-sharing-services
-# ---------------------------------------------------------------
-
-# AddThis Share. See: https://www.addthis.com
-# Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id: ra-5cea955695cec786
-
-# Likely Share
-# See: https://ilyabirman.net/projects/likely/
-# Likely supports four looks, nine social networks, any button text.
-# You are free to modify the text value and order of any network.
-likely:
-  enable: false
-  look: normal # Available values: normal | light | small | big
-  networks:
-    twitter: Tweet
-    facebook: Share
-    linkedin: Link
-    gplus: Plus
-    vkontakte: Share
-    odnoklassniki: Class
-    telegram: Send
-    whatsapp: Send
-    pinterest: Pin
-
-# NeedMoreShare2
-# Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
-# iconStyle: default | box
-# boxForm: horizontal | vertical
-# position: top / middle / bottom + Left / Center / Right
-# networks:
-# Weibo | Wechat | Douban | QQZone | Twitter | Facebook | Linkedin | Mailto | Reddit | Delicious | StumbleUpon | Pinterest
-# GooglePlus | Tumblr | GoogleBookmarks | Newsvine | Evernote | Friendfeed | Vkontakte | Odnoklassniki | Mailru
-needmoreshare2:
-  enable: false
-  postbottom:
-    enable: false
-    options:
-      iconStyle: box
-      boxForm: horizontal
-      position: bottomCenter
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
-  float:
-    enable: false
-    options:
-      iconStyle: box
-      boxForm: horizontal
-      position: middleRight
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
-
-
-# ---------------------------------------------------------------
-# Statistics and Analytics
-# See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
-# ---------------------------------------------------------------
-
-# Baidu Analytics
-baidu_analytics: 5c2fd77db34c77c44215b94264d80aa8
-
-# Growingio Analytics
-# Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
-growingio_analytics: # <project_id>
-
-# Google Analytics
-google_analytics:
-  tracking_id: UA-120518210-1
-  localhost_ignored: true
-
-# CNZZ count
-cnzz_siteid:
-
-# Application Insights
-# See: https://azure.microsoft.com/en-us/services/application-insights
-application_insights:
-
-# Post widgets & FB/VK comments settings.
-# ---------------------------------------------------------------
-=======
 # Post Widgets & Content Sharing Services
 # See: https://theme-next.org/docs/third-party-services/post-widgets
 # ---------------------------------------------------------------
 
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
 # Facebook SDK Support
 facebook_sdk:
   enable:       false
@@ -937,7 +728,7 @@ rating:
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
+add_this_id: ra-5cea955695cec786
 
 
 # ---------------------------------------------------------------
@@ -946,7 +737,7 @@ add_this_id:
 # ---------------------------------------------------------------
 
 # Baidu Analytics
-baidu_analytics: # <app_id>
+baidu_analytics: 5c2fd77db34c77c44215b94264d80aa8
 
 # Growingio Analytics
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -954,7 +745,7 @@ growingio_analytics: # <project_id>
 
 # Google Analytics
 google_analytics:
-  tracking_id: # <app_id>
+  tracking_id: UA-120518210-1
   localhost_ignored: true
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
@@ -1143,10 +934,6 @@ pace:
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
   enable: false
-<<<<<<< HEAD
-  delay: true # Set true to further delay loading
-=======
->>>>>>> 5190e193a7209da820e6b2f44301a12c12152403
   three_waves: false
   canvas_lines: false
   canvas_sphere: false
@@ -1170,19 +957,6 @@ canvas_ribbon:
   size: 300 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
-
-# Related popular posts
-# Dependencies: https://github.com/tea3/hexo-related-popular-posts
-related_posts:
-  enable: true
-  title: # Custom header, leave empty to use the default one
-  display_in_home: false
-  params:
-    maxCount: 5
-    PPMixingRate: 0.0
-    isDate: true
-    isImage: false
-    isExcerpt: false
 
 
 #! ---------------------------------------------------------------
